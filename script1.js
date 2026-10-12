@@ -65,8 +65,8 @@ function startMachine() {
   while (again == true) {
     showMenu();
 
-    let choice = parseInt(prompt("Enter item number (1-5):"));
-    let money = parseInt(prompt("Enter how much money you have:"));
+    let choice = Number(prompt("Enter item number (1-5):"));
+    let money = Number(prompt("Enter how much money you have:"));
 
     if (isNaN(choice) || choice < 1 || choice > 5) {
       alert("Invalid item number!");
