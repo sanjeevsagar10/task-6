@@ -32,7 +32,7 @@ function buyItem(choice, money) {
     alert("Not enough balance! " + name + " costs Rs." + price);
     return false;
   }
-
+  else{
   let change = money - price;
   if (change == 0) {
     alert("You bought " + name + ". Exact amount, no change.");
@@ -40,6 +40,7 @@ function buyItem(choice, money) {
     alert("You bought " + name + ". Your change is Rs." + change);
   }
   return true;
+}
 }
 
 function countdown() {
